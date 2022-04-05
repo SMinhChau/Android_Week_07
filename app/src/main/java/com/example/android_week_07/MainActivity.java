@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
 //        Log.d( "onCreate: ",arrayList.get(0).getName());
 
-          adapter= new PersonAdapter(this,R.layout.persion_item,arrayList);
+        adapter= new PersonAdapter(this,R.layout.persion_item,arrayList);
 //        System.out.println("-------------"+adapter);
         listView.setAdapter(adapter);
 
@@ -53,23 +53,23 @@ public class MainActivity extends AppCompatActivity {
         });
 //        https://stackoverflow.com/questions/60508944/android-studio-making-a-selection-turns-on-the-insert-key
 
-    btnAdd.setOnClickListener(new View.OnClickListener() {
-    @Override
-    public void onClick(View view) {
-        String name = textViewName.getText().toString();
-        textViewName.setText("");
-        dataBasePerson.addPerson(new Person(name));
-        updateDataList();
+        btnAdd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String name = textViewName.getText().toString();
+                textViewName.setText("");
+                dataBasePerson.addPerson(new Person(name));
+                updateDataList();
 
-    }
-});
-    btnRemove.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View view) {
-            dataBasePerson.deletePerson(arrayList.get(position));
-            updateDataList();
-        }
-    });
+            }
+        });
+        btnRemove.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dataBasePerson.deletePerson(arrayList.get(position));
+                updateDataList();
+            }
+        });
 
 
 
@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
 //        Log.d("Name: ", log);
 //    }
 
-}
+    }
 
     @Override
     protected void onPause() {
