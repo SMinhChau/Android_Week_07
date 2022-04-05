@@ -6,11 +6,11 @@
     android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnAdd"
         android:layout_width="82dp"
         android:layout_height="40dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/button_view"
         android:text="Add"
         android:textAllCaps="false"
@@ -19,7 +19,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tvName" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnRemove"
         android:layout_width="82dp"
         android:layout_height="40dp"
         android:layout_marginStart="56dp"
@@ -27,50 +27,50 @@
         android:text="Remove"
         android:textAllCaps="false"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="@+id/button"
-        app:layout_constraintStart_toEndOf="@+id/button"
-        app:layout_constraintTop_toTopOf="@+id/button"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAdd"
+        app:layout_constraintStart_toEndOf="@+id/btnAdd"
+        app:layout_constraintTop_toTopOf="@+id/btnAdd"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnCancel"
         android:layout_width="82dp"
         android:layout_height="40dp"
-        android:layout_marginStart="40dp"
+        android:layout_marginStart="48dp"
         android:background="@drawable/button_view"
         android:text="Cancel"
         android:textAllCaps="false"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="@+id/button2"
-        app:layout_constraintStart_toEndOf="@+id/button2"
-        app:layout_constraintTop_toTopOf="@+id/button2"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintBottom_toBottomOf="@+id/btnRemove"
+        app:layout_constraintStart_toEndOf="@+id/btnRemove"
+        app:layout_constraintTop_toTopOf="@+id/btnRemove"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ListView
         android:id="@+id/IdListView"
-        android:layout_width="398dp"
-        android:layout_height="562dp"
-        android:layout_marginStart="4dp"
+        android:layout_width="413dp"
+        android:layout_height="579dp"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginBottom="18dp"
+        android:background="#9AD1BD"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/btnRemove"
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/tvName"
-        android:layout_width="352dp"
-        android:layout_height="38dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="354dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
         android:drawableLeft="@drawable/vector"
+        android:drawablePadding="20dip"
         android:ems="10"
         android:gravity="center_vertical"
+        android:hint="Put name to add"
         android:inputType="textPersonName"
-        android:text="Put name to add"
+        android:paddingLeft="20dp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"

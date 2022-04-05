@@ -94,10 +94,10 @@ public class DataBasePerson extends SQLiteOpenHelper {
     }
 
 
-    public void deletePerson(Contact contact) {
+    public void deletePerson(Person contact) {
         SQLiteDatabase db = this.getWritableDatabase();
         db.delete(TABLE_CONTACTS, KEY_ID + " = ?",
-                new String[] { String.valueOf(contact.getID()) });
+                new String[] { String.valueOf(contact.getId()) });
         db.close();
     }
 
